@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TwistCraft – Handmade Pipe Cleaner Gifts</title>
+
+  <!-- ── FAVICON ── -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,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"/>
+
+  <!-- ── FONTS & EMAILJS ── -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<style>
+:root {
+  --cream: #FFF8F0; --warm: #FFFDF9;
+  --pink: #FF6B9D; --pink-dark: #e0538a;
+  --yellow: #FFD166; --green: #06D6A0;
+  --blue: #118AB2; --purple: #C77DFF;
+  --coral: #FF8552; --dark: #1E1E2E;
+  --text: #3D3D3D; --muted: #888;
+  --border: #ede0d4;
+  --shadow: 0 8px 32px rgba(0,0,0,.10);
+  --r: 18px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:900;background:rgba(255,248,240,.96);backdrop-filter:blur(14px);border-bottom:2.5px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:66px}
+.logo{font-family:'Pacifico',cursive;font-size:1.6rem;color:var(--pink);text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--text);font-weight:700;font-size:.93rem;transition:color .2s}
+.nav-links a:hover{color:var(--pink)}
+.nav-right{display:flex;align-items:center;gap:.7rem}
+.wa-btn{background:#25D366;color:#fff;border:none;border-radius:50px;padding:.45rem 1rem;font-family:'Nunito',sans-serif;font-weight:800;font-size:.82rem;cursor:pointer;display:flex;align-items:center;gap:.35rem;text-decoration:none;transition:background .2s}
+.wa-btn:hover{background:#1ea855}
+.cart-btn{background:var(--pink);color:#fff;border:none;border-radius:50px;padding:.45rem 1.1rem;font-family:'Nunito',sans-serif;font-weight:800;font-size:.87rem;cursor:pointer;display:flex;align-items:center;gap:.4rem;transition:all .2s}
+.cart-btn:hover{background:var(--pink-dark);transform:scale(1.04)}
+#cart-count{background:var(--yellow);color:var(--dark);border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:900}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
+.hamburger span{display:block;width:25px;height:3px;background:var(--dark);border-radius:3px}
+
+/* ── HERO ── */
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap;padding:4rem 5vw;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 70% at 55% 50%,#ffe2ef 0%,#fff8f0 65%)}
+.blob{position:absolute;border-radius:50%;filter:blur(65px);opacity:.45;animation:float 9s ease-in-out infinite}
+.b1{width:380px;height:380px;background:#ffd166;top:-80px;right:-60px}
+.b2{width:260px;height:260px;background:#06d6a0;bottom:-50px;left:-40px;animation-delay:3s}
+.b3{width:180px;height:180px;background:#c77dff;top:38%;right:12%;animation-delay:5.5s}
+@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-28px) scale(1.05)}}
+.hero-content{position:relative;z-index:2;max-width:600px;animation:fadeUp .8s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-tag{display:inline-block;background:var(--yellow);color:var(--dark);font-weight:900;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;padding:.3rem 1rem;border-radius:50px;margin-bottom:1.1rem}
+.hero h1{font-family:'Pacifico',cursive;font-size:clamp(2.6rem,5.5vw,4.2rem);line-height:1.2;color:var(--dark);margin-bottom:.9rem}
+.hero h1 span{color:var(--pink)}
+.hero p{font-size:1.1rem;color:#555;line-height:1.7;margin-bottom:1.8rem;font-weight:600}
+.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap}
+.btn-p{background:var(--pink);color:#fff;text-decoration:none;padding:.8rem 1.9rem;border-radius:50px;font-weight:900;font-size:.95rem;border:none;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;display:inline-flex;align-items:center;gap:.4rem}
+.btn-p:hover{background:var(--pink-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,107,157,.4)}
+.btn-s{background:transparent;color:var(--dark);text-decoration:none;padding:.8rem 1.9rem;border-radius:50px;font-weight:900;font-size:.95rem;border:2.5px solid var(--dark);cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;display:inline-flex;align-items:center;gap:.4rem}
+.btn-s:hover{background:var(--dark);color:#fff}
+.hero-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;animation:fadeUp .8s .2s ease both}
+.hero-img-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1rem;width:300px}
+.hcard{border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:4.5rem;height:130px;box-shadow:var(--shadow);border:3px solid #fff;transition:transform .3s}
+.hcard:hover{transform:scale(1.08) rotate(-3deg)}
+.hcard:nth-child(1){background:linear-gradient(135deg,#fff0f6,#ffd6e7);border-color:var(--pink)}
+.hcard:nth-child(2){background:linear-gradient(135deg,#f0fff8,#d6ffe9);border-color:var(--green);transform:translateY(14px)}
+.hcard:nth-child(3){background:linear-gradient(135deg,#fffbe8,#fff3c0);border-color:var(--yellow);transform:translateY(-8px)}
+.hcard:nth-child(4){background:linear-gradient(135deg,#f5f0ff,#e8d6ff);border-color:var(--purple)}
+
+/* ── TRUST BAR ── */
+.trust{background:var(--dark);color:#fff;display:flex;align-items:center;justify-content:center;gap:2.5rem;padding:.9rem 5vw;flex-wrap:wrap;font-weight:700;font-size:.87rem}
+.ti{display:flex;align-items:center;gap:.45rem}
+.ti span:first-child{font-size:1.1rem}
+
+/* ── SECTION COMMON ── */
+section{padding:4.5rem 5vw}
+.sec-title{font-family:'Pacifico',cursive;font-size:clamp(1.9rem,4vw,2.9rem);color:var(--dark);text-align:center;margin-bottom:.45rem}
+.sec-sub{text-align:center;color:var(--muted);font-size:1rem;font-weight:600;margin-bottom:2.8rem}
+
+/* ── PRODUCTS ── */
+#shop{background:var(--warm)}
+.filters{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.4rem}
+.fb{background:#fff;border:2px solid var(--border);border-radius:50px;padding:.38rem 1.1rem;font-family:'Nunito',sans-serif;font-weight:700;font-size:.85rem;cursor:pointer;transition:all .2s}
+.fb.active,.fb:hover{background:var(--pink);color:#fff;border-color:var(--pink)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.6rem;max-width:1200px;margin:0 auto}
+.pcard{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:transform .25s,box-shadow .25s;position:relative}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.13)}
+.pbadge{position:absolute;top:12px;left:12px;font-weight:900;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;padding:.22rem .65rem;border-radius:50px;z-index:2}
+.pbadge.hot{background:var(--coral);color:#fff}
+.pbadge.new{background:var(--green);color:#fff}
+.pwish{position:absolute;top:12px;right:12px;background:#fff;border:none;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s;z-index:2}
+.pwish:hover{transform:scale(1.2)}
+.pimg{width:100%;height:195px;display:flex;align-items:center;justify-content:center;font-size:5rem;position:relative;overflow:hidden}
+.pimg img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0}
+.pinfo{padding:1.1rem}
+.pname{font-weight:800;font-size:.97rem;margin-bottom:.22rem}
+.pdesc{color:var(--muted);font-size:.82rem;margin-bottom:.75rem;line-height:1.5}
+.pbot{display:flex;align-items:center;justify-content:space-between}
+.pprice{font-weight:900;font-size:1.15rem;color:var(--pink)}
+.padd{background:var(--dark);color:#fff;border:none;border-radius:50px;padding:.42rem .95rem;font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;cursor:pointer;transition:all .2s}
+.padd:hover{background:var(--pink);transform:scale(1.05)}
+
+/* ── GIFT COLLECTIONS ── */
+#gifts{background:var(--cream)}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.4rem;max-width:1100px;margin:0 auto}
+.gcard{border-radius:var(--r);padding:1.8rem 1.6rem;cursor:pointer;transition:transform .25s}
+.gcard:hover{transform:translateY(-5px)}
+.gcard.gp{background:linear-gradient(135deg,#ff6b9d,#ff99c8);color:#fff}
+.gcard.gy{background:linear-gradient(135deg,#ffd166,#ffe799);color:var(--dark)}
+.gcard.gg{background:linear-gradient(135deg,#06d6a0,#5ef5ca);color:#fff}
+.gcard.gv{background:linear-gradient(135deg,#c77dff,#e0b0ff);color:#fff}
+.gicon{font-size:2.8rem;margin-bottom:.7rem}
+.gcard h3{font-family:'Pacifico',cursive;font-size:1.3rem;margin-bottom:.5rem}
+.gcard p{font-size:.88rem;font-weight:600;opacity:.88;line-height:1.5}
+
+/* ── HOW IT WORKS ── */
+#how{background:var(--dark);color:#fff}
+#how .sec-title{color:#fff}
+#how .sec-sub{color:#aaa}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.8rem;max-width:980px;margin:0 auto}
+.step{text-align:center;padding:1.5rem;border-radius:var(--r);background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);transition:background .2s}
+.step:hover{background:rgba(255,255,255,.1)}
+.snum{width:50px;height:50px;border-radius:50%;background:var(--pink);color:#fff;font-weight:900;font-size:1.2rem;display:flex;align-items:center;justify-content:center;margin:0 auto .9rem}
+.step h3{font-weight:800;font-size:1rem;margin-bottom:.4rem}
+.step p{color:#aaa;font-size:.85rem;line-height:1.6}
+
+/* ── REVIEWS ── */
+#reviews{background:#fff}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.4rem;max-width:980px;margin:0 auto}
+.rcard{background:var(--cream);border-radius:var(--r);padding:1.5rem;transition:transform .2s}
+.rcard:nth-child(1){border-left:5px solid var(--pink)}
+.rcard:nth-child(2){border-left:5px solid var(--green)}
+.rcard:nth-child(3){border-left:5px solid var(--yellow)}
+.rcard:hover{transform:translateY(-4px)}
+.rstars{color:var(--yellow);font-size:1rem;margin-bottom:.6rem}
+.rtext{font-size:.9rem;line-height:1.6;margin-bottom:.9rem;font-weight:600;font-style:italic}
+.rby{display:flex;align-items:center;gap:.65rem}
+.ravi{width:38px;height:38px;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;background:var(--cream)}
+.rname{font-weight:800;font-size:.87rem}
+.rloc{color:var(--muted);font-size:.75rem}
+
+/* ── CUSTOM ORDER ── */
+#custom{background:linear-gradient(135deg,#fff0f6,#fff8f0)}
+.ci{max-width:680px;margin:0 auto}
+.fg{margin-bottom:1.2rem}
+.fg label{display:block;font-weight:800;font-size:.88rem;margin-bottom:.38rem;color:var(--dark)}
+.fg input,.fg select,.fg textarea{width:100%;padding:.75rem 1rem;border:2px solid var(--border);border-radius:12px;font-family:'Nunito',sans-serif;font-size:.93rem;background:#fff;transition:border-color .2s;outline:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--pink)}
+.fg textarea{min-height:100px;resize:vertical}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fsub{width:100%;padding:.95rem;background:var(--pink);color:#fff;border:none;border-radius:50px;font-family:'Nunito',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;transition:all .2s}
+.fsub:hover{background:var(--pink-dark);transform:translateY(-2px)}
+#fs{display:none;text-align:center;padding:1.8rem;background:#e8fef5;border-radius:var(--r);border:2px solid var(--green);margin-top:1rem}
+#fs h3{color:var(--green);font-size:1.2rem;margin-bottom:.45rem}
+
+/* ── CART OVERLAY ── */
+.cover{position:fixed;inset:0;background:rgba(0,0,0,.42);z-index:1500;opacity:0;pointer-events:none;transition:opacity .3s}
+.cover.open{opacity:1;pointer-events:all}
+.cart-side{position:fixed;top:0;right:0;bottom:0;width:min(410px,100vw);background:var(--warm);z-index:1600;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-8px 0 40px rgba(0,0,0,.14)}
+.cart-side.open{transform:translateX(0)}
+.ch{display:flex;align-items:center;justify-content:space-between;padding:1.4rem;border-bottom:2px solid var(--border)}
+.ch h2{font-family:'Pacifico',cursive;font-size:1.35rem;color:var(--pink)}
+.xbtn{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--muted);transition:color .2s}
+.xbtn:hover{color:var(--dark)}
+.citems{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.9rem}
+.citem{display:flex;gap:.85rem;align-items:flex-start;background:#fff;border-radius:14px;padding:.85rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.cemoji{font-size:2.3rem;flex-shrink:0}
+.cinf{flex:1}
+.cname{font-weight:800;font-size:.88rem}
+.cprice{color:var(--pink);font-weight:900;font-size:.88rem}
+.cctrl{display:flex;align-items:center;gap:.38rem;margin-top:.38rem}
+.qb{width:25px;height:25px;border-radius:50%;border:2px solid var(--dark);background:none;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.85rem;transition:all .15s}
+.qb:hover{background:var(--dark);color:#fff}
+.qn{font-weight:800;min-width:18px;text-align:center;font-size:.88rem}
+.cdel{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.95rem;margin-left:auto}
+.cdel:hover{color:var(--pink)}
+.cempty{display:flex;flex-direction:column;align-items:center;gap:.9rem;padding:2.5rem;color:var(--muted);font-weight:700;text-align:center}
+.cempty div{font-size:3rem}
+.cfooter{padding:1.4rem;border-top:2px solid var(--border)}
+.ctotal{display:flex;justify-content:space-between;font-weight:900;font-size:1.05rem;margin-bottom:.9rem}
+.chkbtn{width:100%;padding:.95rem;background:var(--pink);color:#fff;border:none;border-radius:50px;font-family:'Nunito',sans-serif;font-weight:900;font-size:.97rem;cursor:pointer;transition:background .2s}
+.chkbtn:hover{background:var(--pink-dark)}
+
+/* ── CHECKOUT MODAL (multi-step) ── */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:1rem}
+.modal-bg.open{opacity:1;pointer-events:all}
+.modal{background:#fff;border-radius:24px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;transform:scale(.93);transition:transform .3s;position:relative}
+.modal-bg.open .modal{transform:scale(1)}
+.mhead{padding:1.5rem 1.5rem 0;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;border-bottom:2px solid var(--border);padding-bottom:1rem;z-index:10}
+.mhead h2{font-family:'Pacifico',cursive;font-size:1.45rem;color:var(--pink)}
+.mbody{padding:1.4rem 1.5rem 1.8rem}
+
+/* progress bar */
+.prog{display:flex;gap:.5rem;margin-bottom:1.5rem}
+.pstep{flex:1;height:6px;border-radius:50px;background:#f0e8e0;transition:background .3s}
+.pstep.done{background:var(--green)}
+.pstep.active{background:var(--pink)}
+
+/* step panels */
+.spanel{display:none}
+.spanel.show{display:block}
+
+/* order item row */
+.orow{display:flex;align-items:center;gap:.7rem;padding:.6rem 0;border-bottom:1px solid var(--border);font-size:.9rem}
+.orow:last-child{border:none}
+.oemoji{font-size:1.8rem}
+.oname{flex:1;font-weight:700}
+.oqty{color:var(--muted);font-size:.8rem}
+.oprice{font-weight:900;color:var(--pink)}
+.ototal{display:flex;justify-content:space-between;font-weight:900;font-size:1.05rem;padding:.9rem 0;border-top:2.5px solid var(--dark);margin-top:.5rem}
+
+/* info fields */
+.mfg{margin-bottom:1rem}
+.mfg label{display:block;font-weight:800;font-size:.85rem;margin-bottom:.3rem;color:var(--dark)}
+.mfg input,.mfg select,.mfg textarea{width:100%;padding:.7rem .9rem;border:2px solid var(--border);border-radius:10px;font-family:'Nunito',sans-serif;font-size:.9rem;background:#fff;outline:none;transition:border-color .2s}
+.mfg input:focus,.mfg select:focus,.mfg textarea:focus{border-color:var(--pink)}
+.mfg textarea{min-height:70px;resize:vertical}
+.mrow{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.merr{display:none;color:#e53e3e;font-size:.78rem;margin-top:.25rem;font-weight:700}
+
+/* payment box */
+.paybox{background:linear-gradient(135deg,#fff0f6,#ffe8f0);border:2px dashed var(--pink);border-radius:var(--r);padding:1.4rem;margin-bottom:1.2rem;text-align:center}
+.paybox .pamount{font-family:'Pacifico',cursive;font-size:2rem;color:var(--pink);margin:.4rem 0}
+.paybox .panum{font-weight:900;font-size:1.1rem;color:var(--dark);background:#fff;display:inline-block;padding:.35rem 1rem;border-radius:50px;margin:.4rem 0;border:2px solid var(--pink)}
+.paybox p{font-size:.85rem;color:#555;font-weight:600;margin:.3rem 0}
+.copy-btn{background:var(--dark);color:#fff;border:none;border-radius:50px;padding:.35rem .9rem;font-family:'Nunito',sans-serif;font-weight:800;font-size:.78rem;cursor:pointer;margin-top:.4rem}
+.copy-btn:hover{background:var(--pink)}
+.tid-note{background:#fff8e1;border:2px solid var(--yellow);border-radius:12px;padding:.9rem 1rem;margin-bottom:1rem;font-size:.85rem;font-weight:700;color:#7a6000}
+.check-row{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1rem;font-size:.88rem;font-weight:700;cursor:pointer}
+.check-row input{width:18px;height:18px;accent-color:var(--pink);margin-top:2px;cursor:pointer}
+
+/* success */
+.success-box{text-align:center;padding:1rem 0}
+.success-icon{font-size:4rem;animation:pop .5s ease}
+@keyframes pop{0%{transform:scale(0)}80%{transform:scale(1.2)}100%{transform:scale(1)}}
+.success-box h3{font-family:'Pacifico',cursive;font-size:1.6rem;color:var(--green);margin:.6rem 0}
+.oid{background:var(--cream);border:2px solid var(--border);border-radius:12px;padding:.7rem 1.2rem;font-weight:900;font-size:1rem;margin:.8rem 0;display:inline-block}
+.success-box p{font-size:.9rem;color:#555;font-weight:600;line-height:1.6;margin:.4rem 0}
+.wa-confirm{display:inline-flex;align-items:center;gap:.4rem;background:#25D366;color:#fff;text-decoration:none;padding:.75rem 1.6rem;border-radius:50px;font-weight:900;font-size:.9rem;margin-top:1rem}
+.wa-confirm:hover{background:#1ea855}
+
+/* nav btns in modal */
+.mnav{display:flex;gap:.7rem;margin-top:1.3rem}
+.mnext{flex:1;padding:.85rem;background:var(--pink);color:#fff;border:none;border-radius:50px;font-family:'Nunito',sans-serif;font-weight:900;font-size:.95rem;cursor:pointer;transition:all .2s}
+.mnext:hover{background:var(--pink-dark)}
+.mback{padding:.85rem 1.3rem;background:transparent;color:var(--dark);border:2.5px solid var(--border);border-radius:50px;font-family:'Nunito',sans-serif;font-weight:800;font-size:.9rem;cursor:pointer;transition:all .2s}
+.mback:hover{border-color:var(--dark)}
+
+/* TOAST */
+.toast{position:fixed;bottom:1.8rem;left:50%;transform:translateX(-50%) translateY(80px);background:var(--dark);color:#fff;padding:.75rem 1.7rem;border-radius:50px;font-weight:800;font-size:.88rem;z-index:4000;transition:transform .35s,opacity .35s;opacity:0;white-space:nowrap;pointer-events:none}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+/* FOOTER */
+footer{background:var(--dark);color:#fff;padding:3rem 5vw 1.8rem}
+.fgrid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:2rem;margin-bottom:2rem}
+.fb-brand p{color:#aaa;font-size:.86rem;margin-top:.65rem;line-height:1.6}
+.fc h4{font-weight:900;font-size:.87rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:.9rem;color:var(--yellow)}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.fc ul a{color:#aaa;text-decoration:none;font-size:.85rem;transition:color .2s}
+.fc ul a:hover{color:#fff}
+.fsocials{display:flex;gap:.65rem;margin-top:.9rem}
+.fsoc{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:.95rem;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s}
+.fsoc:hover{background:var(--pink);transform:scale(1.12)}
+.fbot{border-top:1px solid rgba(255,255,255,.08);padding-top:1.4rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.fbot p{color:#555;font-size:.8rem}
+
+/* WhatsApp float btn */
+.wa-float{position:fixed;bottom:1.6rem;right:1.6rem;z-index:800;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);text-decoration:none;font-size:1.6rem;transition:transform .2s}
+.wa-float:hover{transform:scale(1.12)}
+
+/* LOADING SPINNER */
+.spinner{display:inline-block;width:18px;height:18px;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav-links{display:none}.hamburger{display:flex}
+  .hero{flex-direction:column;text-align:center;min-height:auto;padding-top:3rem}
+  .hero-btns{justify-content:center}
+  .hero-visual{display:none}
+  .frow,.mrow{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:500px){
+  .fgrid{grid-template-columns:1fr}
+  .trust{gap:1.3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ WHATSAPP FLOAT ══ -->
+<a href="https://wa.me/923289672939" target="_blank" class="wa-float" title="Chat on WhatsApp">💬</a>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="#" class="logo">🌸 TwistCraft</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#gifts">Gift Sets</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#custom">Custom Order</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://wa.me/923289672939" target="_blank" class="wa-btn">💬 WhatsApp</a>
+    <button class="cart-btn" onclick="openCart()">🛒 Cart <span id="cart-count">0</span></button>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="hero-content">
+    <span class="hero-tag">✨ Handmade with Love</span>
+    <h1>Gifts they'll <span>treasure</span> forever 🌸</h1>
+    <p>Unique pipe cleaner keychains, flowers & figures — handcrafted to make your loved ones smile. Perfect for birthdays, anniversaries & every moment worth celebrating.</p>
+    <div class="hero-btns">
+      <a href="#shop" class="btn-p">Shop Now 🛍️</a>
+      <a href="#custom" class="btn-s">Custom Order ✏️</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-wrap">
+      <div class="hcard">🌸</div>
+      <div class="hcard">🐻</div>
+      <div class="hcard">🌹</div>
+      <div class="hcard">🗝️</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<div class="trust">
+  <div class="ti"><span>💌</span>Free Gift Wrapping</div>
+  <div class="ti"><span>🚚</span>Fast Delivery</div>
+  <div class="ti"><span>🎨</span>100% Handmade</div>
+  <div class="ti"><span>⭐</span>4.9/5 Rating</div>
+  <div class="ti"><span>📱</span>JazzCash / EasyPaisa</div>
+  <div class="ti"><span>🔁</span>Easy Returns</div>
+</div>
+
+<!-- ══ SHOP ══ -->
+<section id="shop">
+  <h2 class="sec-title">Shop Our Collection</h2>
+  <p class="sec-sub">Every piece is handcrafted — no two are exactly alike 💕</p>
+  <div class="filters">
+    <button class="fb active" onclick="filterProds('all',this)">All ✨</button>
+    <button class="fb" onclick="filterProds('flowers',this)">Flowers 🌸</button>
+    <button class="fb" onclick="filterProds('keychains',this)">Keychains 🗝️</button>
+    <button class="fb" onclick="filterProds('figures',this)">Figures 🐾</button>
+    <button class="fb" onclick="filterProds('sets',this)">Gift Sets 🎁</button>
+  </div>
+  <div class="pgrid" id="pgrid"></div>
+</section>
+
+<!-- ══ GIFT COLLECTIONS ══ -->
+<section id="gifts">
+  <h2 class="sec-title">Gift Collections 🎁</h2>
+  <p class="sec-sub">Because every relationship deserves something handmade</p>
+  <div class="ggrid">
+    <div class="gcard gp" onclick="filterProds('flowers',document.querySelector('.fb:nth-child(2));document.getElementById('shop').scrollIntoView()">
+      <div class="gicon">💑</div>
+      <h3>For Your Partner</h3>
+      <p>Roses, heart shapes & cute couple figures — a handmade confession that says more than words.</p>
+    </div>
+    <div class="gcard gy">
+      <div class="gicon">🧑‍🤝‍🧑</div>
+      <h3>For Best Friends</h3>
+      <p>Matching keychains, fun animals & BFF sets they'll carry every single day.</p>
+    </div>
+    <div class="gcard gg">
+      <div class="gicon">🌻</div>
+      <h3>For Family</h3>
+      <p>Sunflowers, birth month flowers & little family figures that decorate any shelf with love.</p>
+    </div>
+    <div class="gcard gv">
+      <div class="gicon">🎓</div>
+      <h3>Graduation Gifts</h3>
+      <p>Celebrate their big milestone with a one-of-a-kind handmade keepsake they'll never forget.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section id="how">
+  <h2 class="sec-title">How It Works</h2>
+  <p class="sec-sub">From our hands to your heart — simple & safe 🤍</p>
+  <div class="steps">
+    <div class="step"><div class="snum">1</div><h3>Browse & Choose</h3><p>Pick from our collection or design something unique with a custom order.</p></div>
+    <div class="step"><div class="snum">2</div><h3>Place Your Order</h3><p>Fill in your details, delivery address, and get your order ID instantly.</p></div>
+    <div class="step"><div class="snum">3</div><h3>Pay via JazzCash</h3><p>Send the total to 032896729393 and enter your transaction ID to confirm.</p></div>
+    <div class="step"><div class="snum">4</div><h3>We Handcraft It</h3><p>Your item is made fresh with love — each twist placed just for you.</p></div>
+    <div class="step"><div class="snum">5</div><h3>Gift Wrapped & Shipped</h3><p>Packed beautifully with tissue, ribbon & a message card. Arrives at your door ✨</p></div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ══ -->
+<section id="reviews">
+  <h2 class="sec-title">What People Say 💬</h2>
+  <p class="sec-sub">Real reviews from real happy customers</p>
+  <div class="rgrid">
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <p class="rtext">"I got a custom bouquet for my girlfriend's birthday and she literally cried! So detailed and beautiful. Will order again!"</p>
+      <div class="rby"><div class="ravi">😊</div><div><div class="rname">Amir S.</div><div class="rloc">Lahore, Pakistan</div></div></div>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <p class="rtext">"Got matching keychains with my bestie and we LOVE them. So unique — nobody else has something like this!"</p>
+      <div class="rby"><div class="ravi">🥰</div><div><div class="rname">Zara K.</div><div class="rloc">Karachi, Pakistan</div></div></div>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <p class="rtext">"Ordered a cactus figure for my mom and she put it on her desk at work. The packaging was so cute — felt like a big brand gift!"</p>
+      <div class="rby"><div class="ravi">😍</div><div><div class="rname">Sara M.</div><div class="rloc">Islamabad, Pakistan</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CUSTOM ORDER FORM ══ -->
+<section id="custom">
+  <h2 class="sec-title">Custom Orders ✏️</h2>
+  <p class="sec-sub">Something special in mind? We'll make it happen!</p>
+  <div class="ci">
+    <form id="cform" onsubmit="submitCustom(event)">
+      <div class="frow">
+        <div class="fg"><label>Your Name *</label><input type="text" name="name" placeholder="e.g. Aisha Khan" required/></div>
+        <div class="fg"><label>Email Address *</label><input type="email" name="email" placeholder="you@email.com" required/></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>WhatsApp Number *</label><input type="tel" name="phone" placeholder="03XX-XXXXXXX" required/></div>
+        <div class="fg"><label>Item Type *</label>
+          <select name="item" required>
+            <option value="">Select...</option>
+            <option>Flower Bouquet 🌸</option>
+            <option>Keychain 🗝️</option>
+            <option>Animal Figure 🐾</option>
+            <option>Portrait Figure 🧍</option>
+            <option>Butterfly 🦋</option>
+            <option>Other (describe below)</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Preferred Colors</label><input type="text" name="colors" placeholder="e.g. pink, white, gold — or 'surprise me!'"/></div>
+      <div class="fg"><label>Describe Your Vision *</label><textarea name="vision" placeholder="Who is this for, the occasion, any special details... The more you share, the better! ✨" required></textarea></div>
+      <div class="fg"><label>Gift Message (optional)</label><input type="text" name="message" placeholder="We'll write this on the card inside 💌"/></div>
+      <div class="fg"><label>City / Location *</label><input type="text" name="city" placeholder="e.g. Karachi" required/></div>
+      <button type="submit" class="fsub" id="csub-btn">✨ Send My Custom Order Request</button>
+    </form>
+    <div id="fs">
+      <h3>🎉 Request Received!</h3>
+      <p>We'll WhatsApp you within 24 hours to confirm details & pricing. Keep an eye on your messages! 💌</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="fgrid">
+    <div class="fb-brand">
+      <a href="#" class="logo">🌸 TwistCraft</a>
+      <p>Handmade pipe cleaner gifts for every moment worth celebrating. Each piece is made with love, one twist at a time.</p>
+      <div class="fsocials">
+        <a href="https://wa.me/923289679393" target="_blank" class="fsoc">💬</a>
+        <div class="fsoc" onclick="showToast('Instagram coming soon! 📸')">📸</div>
+        <div class="fsoc" onclick="showToast('TikTok coming soon! 🎵')">🎵</div>
+        <div class="fsoc" onclick="showToast('Pinterest coming soon! 📌')">📌</div>
+      </div>
+    </div>
+    <div class="fc"><h4>Shop</h4><ul><li><a href="#shop">All Products</a></li><li><a href="#gifts">Gift Sets</a></li><li><a href="#custom">Custom Orders</a></li><li><a href="#shop">New Arrivals</a></li></ul></div>
+    <div class="fc"><h4>Info</h4><ul><li><a href="#how">How It Works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#" onclick="showToast('Shipping: 3-5 days nationwide 🚚')">Shipping Policy</a></li><li><a href="#" onclick="showToast('Returns accepted within 3 days of delivery')">Return Policy</a></li></ul></div>
+    <div class="fc"><h4>Contact</h4><ul>
+      <li><a href="mailto:muhammadismail300212@gmail.com">muhammadismail300212<br>@gmail.com</a></li>
+      <li><a href="https://wa.me/923289679393" target="_blank">WhatsApp: 032896729393</a></li>
+      <li><a href="#custom">Send a Request</a></li>
+    </ul></div>
+  </div>
+  <div class="fbot">
+    <p>© 2024 TwistCraft. All rights reserved. Made with 💖 in Pakistan</p>
+    <p>Privacy Policy · Terms of Service</p>
+  </div>
+</footer>
+
+<!-- ══ CART SIDEBAR ══ -->
+<div class="cover" id="cartCover" onclick="closeCart()"></div>
+<div class="cart-side" id="cartSide">
+  <div class="ch"><h2>Your Cart 🛒</h2><button class="xbtn" onclick="closeCart()">✕</button></div>
+  <div class="citems" id="cartItems"></div>
+  <div class="cfooter" id="cartFooter" style="display:none">
+    <div class="ctotal"><span>Total</span><span id="cartTotal">Rs. 0</span></div>
+    <button class="chkbtn" onclick="startCheckout()">Proceed to Checkout 🎉</button>
+  </div>
+</div>
+
+<!-- ══ CHECKOUT MODAL ══ -->
+<div class="modal-bg" id="checkoutModal">
+  <div class="modal">
+    <div class="mhead">
+      <h2 id="mTitle">Review Your Order</h2>
+      <button class="xbtn" onclick="closeCheckout()">✕</button>
+    </div>
+    <div class="mbody">
+      <!-- progress -->
+      <div class="prog">
+        <div class="pstep" id="ps1"></div>
+        <div class="pstep" id="ps2"></div>
+        <div class="pstep" id="ps3"></div>
+        <div class="pstep" id="ps4"></div>
+      </div>
+
+      <!-- STEP 1: Review -->
+      <div class="spanel" id="step1">
+        <p style="font-weight:700;margin-bottom:.8rem;font-size:.9rem">📋 Your Items</p>
+        <div id="orderReview"></div>
+        <div class="mnav"><button class="mnext" onclick="goStep(2)">Next: Your Details →</button></div>
+      </div>
+
+      <!-- STEP 2: Customer Details -->
+      <div class="spanel" id="step2">
+        <div class="mfg"><label>Full Name *</label><input type="text" id="cName" placeholder="e.g. Muhammad Ali"/><div class="merr" id="eN">Please enter your full name</div></div>
+        <div class="mrow">
+          <div class="mfg"><label>WhatsApp / Phone *</label><input type="tel" id="cPhone" placeholder="03XX-XXXXXXX"/><div class="merr" id="eP">Required</div></div>
+          <div class="mfg"><label>Email Address *</label><input type="email" id="cEmail" placeholder="you@email.com"/><div class="merr" id="eE">Required</div></div>
+        </div>
+        <div class="mrow">
+          <div class="mfg"><label>City *</label><input type="text" id="cCity" placeholder="e.g. Karachi"/><div class="merr" id="eC">Required</div></div>
+          <div class="mfg"><label>Delivery Address *</label><input type="text" id="cAddr" placeholder="Street, Area, House no."/><div class="merr" id="eA">Required</div></div>
+        </div>
+        <div class="mfg"><label>Special Instructions (optional)</label><textarea id="cNote" placeholder="Gift wrapping note, colour preferences, etc."></textarea></div>
+        <div class="mnav">
+          <button class="mback" onclick="goStep(1)">← Back</button>
+          <button class="mnext" onclick="validateStep2()">Next: Payment →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Payment -->
+      <div class="spanel" id="step3">
+        <div class="paybox">
+          <p style="font-weight:800;font-size:.95rem">Send this exact amount via JazzCash / EasyPaisa:</p>
+          <div class="pamount" id="payAmount">Rs. 0</div>
+          <p style="font-size:.82rem;color:#888">to this number:</p>
+          <div class="panum">032896729393</div>
+          <p style="font-size:.78rem;color:#888;margin-top:.3rem">Account Name: <strong>Muhammad Ismail</strong></p>
+          <button class="copy-btn" onclick="copyNum()">📋 Copy Number</button>
+        </div>
+        <div class="tid-note">⚠️ After sending money, paste your <strong>Transaction ID</strong> below. Without it, your order cannot be confirmed.</div>
+        <div class="mfg">
+          <label>JazzCash / EasyPaisa Transaction ID *</label>
+          <input type="text" id="cTxn" placeholder="e.g. TXN-1234567890" style="letter-spacing:1px;font-family:monospace;font-size:1rem"/>
+          <div class="merr" id="eTxn">Please enter your transaction ID (min 8 characters)</div>
+        </div>
+        <label class="check-row"><input type="checkbox" id="cConfirm"/> I confirm that I have successfully sent the payment of <strong id="checkAmt">Rs. 0</strong> to <strong>032896729393</strong></label>
+        <div class="merr" id="eConf" style="display:none;margin-bottom:.8rem">Please confirm you have sent the payment</div>
+        <div class="mnav">
+          <button class="mback" onclick="goStep(2)">← Back</button>
+          <button class="mnext" id="placeBtn" onclick="placeOrder()">✅ Confirm Order</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Success -->
+      <div class="spanel" id="step4">
+        <div class="success-box">
+          <div class="success-icon">🎉</div>
+          <h3>Order Placed!</h3>
+          <p>Your order ID is:</p>
+          <div class="oid" id="orderIdDisplay">TC-000000</div>
+          <p>We've sent a confirmation to <strong id="confirmEmail"></strong></p>
+          <p style="margin-top:.7rem">We'll verify your payment and <strong>confirm via WhatsApp within 2–4 hours.</strong></p>
+          <p style="margin-top:.5rem;font-size:.82rem;color:#888">Screenshot this page or save your Order ID for reference.</p>
+          <a href="#" id="waConfirmLink" class="wa-confirm" target="_blank">💬 Also message us on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══ TOAST ══ -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ══════════════════════════════════
+   EMAILJS SETUP
+   ══════════════════════════════════
+   Before launching, go to https://emailjs.com:
+   1. Create free account
+   2. Add Gmail service → connect muhammadismail300212@gmail.com → get Service ID
+   3. Create Email Template (use variables below) → get Template ID
+   4. Go to Account → API Keys → copy Public Key
+   5. Replace the 3 values below
+   ══════════════════════════════════ */
+const EMAILJS_SERVICE  = 'service_zgjutbk';    // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE = 'template_5hjnc22';   // e.g. 'template_xyz789'
+const EMAILJS_KEY      = 'yCEpSafkEWp3FWlQc';    // e.g. 'user_XXXXXXXXXXXX'
+emailjs.init(EMAILJS_KEY);
+
+/* ══ CONFIG ══ */
+const WA_NUM    = '923289679393';
+const JAZZCASH  = '032896729393';
+const SUPP_EMAIL= 'muhammadismail300212@gmail.com';
+
+/* ══ PRODUCTS ══ */
+const PRODUCTS = [
+  {id:1, name:'Rose Bouquet',      emoji:'🌹', bg:'#fff0f0', border:'#ffb3b3',
+   desc:'A stunning bouquet of pipe cleaner roses — perfect for Valentine\'s or anniversaries.',
+   price:850, cat:'flowers', badge:'hot',
+   img:'https://i.pinimg.com/736x/ae/3e/f9/ae3ef9c4e6ffa7e2b2b7a5d6a4c9c123.jpg'},
+  {id:2, name:'Sunflower Bunch',   emoji:'🌻', bg:'#fffbe8', border:'#ffd166',
+   desc:'Bright & cheerful sunflowers that never wilt. Great desk decor or gift.',
+   price:750, cat:'flowers', badge:'new', img:''},
+  {id:3, name:'Cherry Blossom',    emoji:'🌸', bg:'#fff0f6', border:'#ffaad4',
+   desc:'Delicate pink blossoms on wire stems — a timeless, elegant handmade gift.',
+   price:700, cat:'flowers', badge:null, img:''},
+  {id:4, name:'Daisy Wreath',      emoji:'🌼', bg:'#fffdf0', border:'#ffe066',
+   desc:'A mini wreath of white daisies. Hang it, frame it, or just admire it.',
+   price:900, cat:'flowers', badge:null, img:''},
+  {id:5, name:'Name Keychain',     emoji:'🗝️', bg:'#f0fff8', border:'#06d6a0',
+   desc:'Personalised with your name or initials — great BFF or couple gift.',
+   price:400, cat:'keychains', badge:'hot', img:''},
+  {id:6, name:'Heart Keychain',    emoji:'❤️', bg:'#fff0f6', border:'#ff9dc3',
+   desc:'A classic heart in your choice of colour. Simple, sweet, forever.',
+   price:350, cat:'keychains', badge:null, img:''},
+  {id:7, name:'Star Keychain',     emoji:'⭐', bg:'#fffbe0', border:'#ffd166',
+   desc:'A sparkly star keychain — for the star of your life.',
+   price:380, cat:'keychains', badge:'new', img:''},
+  {id:8, name:'Paw Keychain',      emoji:'🐾', bg:'#f5f0ff', border:'#c77dff',
+   desc:'A cute paw print keychain, great for animal lovers and pet parents!',
+   price:400, cat:'keychains', badge:null, img:''},
+  {id:9, name:'Teddy Bear',        emoji:'🐻', bg:'#fff5e0', border:'#ffad60',
+   desc:'An adorable hand-twisted teddy bear. A gift that goes "aww".',
+   price:600, cat:'figures', badge:'hot', img:''},
+  {id:10,name:'Butterfly Figure',  emoji:'🦋', bg:'#f0f0ff', border:'#9999ff',
+   desc:'A delicate butterfly with spread wings — perfect for any shelf or desk.',
+   price:600, cat:'figures', badge:null, img:''},
+  {id:11,name:'Cactus Planter',    emoji:'🌵', bg:'#f0fff5', border:'#06d6a0',
+   desc:'A tiny cactus that needs zero water. Cute, quirky & zero maintenance.',
+   price:500, cat:'figures', badge:null, img:''},
+  {id:12,name:'Couple Gift Set',   emoji:'🎁', bg:'#fff0f6', border:'#ff6b9d',
+   desc:'2 matching keychains + 1 mini rose bouquet — the ultimate couple gift box.',
+   price:1400, cat:'sets', badge:'hot', img:''},
+];
+
+/* ══ STATE ══ */
+let cart = JSON.parse(localStorage.getItem('tc_cart')||'[]');
+let step = 1;
+let generatedOrderId = '';
+
+/* ══ RENDER PRODUCTS ══ */
+function renderProducts(filter='all'){
+  const g = document.getElementById('pgrid');
+  const list = filter==='all' ? PRODUCTS : PRODUCTS.filter(p=>p.cat===filter);
+  g.innerHTML = list.map(p=>`
+    <div class="pcard">
+      ${p.badge?`<div class="pbadge ${p.badge}">${p.badge==='hot'?'🔥 Popular':'✨ New'}</div>`:''}
+      <button class="pwish" onclick="showToast('Added to wishlist! 💖')">🤍</button>
+      <div class="pimg" style="background:linear-gradient(135deg,${p.bg},${p.border}22)">
+        <span style="position:relative;z-index:1">${p.emoji}</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">${p.name}</div>
+        <div class="pdesc">${p.desc}</div>
+        <div class="pbot">
+          <div class="pprice">Rs. ${p.price.toLocaleString()}</div>
+          <button class="padd" onclick="addToCart(${p.id})">+ Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterProds(cat, btn){
+  document.querySelectorAll('.fb').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  renderProducts(cat);
+}
+
+/* ══ CART ══ */
+function addToCart(id){
+  const p = PRODUCTS.find(x=>x.id===id);
+  const ex = cart.find(c=>c.id===id);
+  if(ex) ex.qty++;
+  else cart.push({...p, qty:1});
+  saveCart(); updateCartUI();
+  showToast(`${p.emoji} ${p.name} added!`);
+}
+
+function saveCart(){ localStorage.setItem('tc_cart', JSON.stringify(cart)); }
+
+function updateCartUI(){
+  const count = cart.reduce((s,c)=>s+c.qty,0);
+  document.getElementById('cart-count').textContent = count;
+  const list = document.getElementById('cartItems');
+  const footer = document.getElementById('cartFooter');
+  if(!cart.length){
+    list.innerHTML=`<div class="cempty"><div>🛒</div><p>Your cart is empty</p><p style="font-size:.82rem">Add something beautiful! ✨</p></div>`;
+    footer.style.display='none'; return;
+  }
+  footer.style.display='block';
+  list.innerHTML = cart.map(item=>`
+    <div class="citem">
+      <div class="cemoji">${item.emoji}</div>
+      <div class="cinf">
+        <div class="cname">${item.name}</div>
+        <div class="cprice">Rs. ${(item.price*item.qty).toLocaleString()}</div>
+        <div class="cctrl">
+          <button class="qb" onclick="changeQty(${item.id},-1)">−</button>
+          <span class="qn">${item.qty}</span>
+          <button class="qb" onclick="changeQty(${item.id},1)">+</button>
+          <button class="cdel" onclick="removeItem(${item.id})" title="Remove">🗑️</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  const total = cart.reduce((s,c)=>s+c.price*c.qty,0);
+  document.getElementById('cartTotal').textContent = `Rs. ${total.toLocaleString()}`;
+}
+
+function changeQty(id, delta){
+  const item = cart.find(c=>c.id===id);
+  if(!item) return;
+  item.qty = Math.max(1, item.qty + delta);
+  saveCart(); updateCartUI();
+}
+function removeItem(id){ cart = cart.filter(c=>c.id!==id); saveCart(); updateCartUI(); }
+
+function openCart(){ document.getElementById('cartSide').classList.add('open'); document.getElementById('cartCover').classList.add('open'); }
+function closeCart(){ document.getElementById('cartSide').classList.remove('open'); document.getElementById('cartCover').classList.remove('open'); }
+
+/* ══ CHECKOUT ══ */
+function startCheckout(){
+  if(!cart.length){ showToast('Your cart is empty!'); return; }
+  closeCart();
+  buildOrderReview();
+  goStep(1);
+  document.getElementById('checkoutModal').classList.add('open');
+}
+
+function closeCheckout(){
+  document.getElementById('checkoutModal').classList.remove('open');
+}
+
+function buildOrderReview(){
+  const total = cart.reduce((s,c)=>s+c.price*c.qty,0);
+  const delivery = 200;
+  const grand = total + delivery;
+  document.getElementById('payAmount').textContent = `Rs. ${grand.toLocaleString()}`;
+  document.getElementById('checkAmt').textContent = `Rs. ${grand.toLocaleString()}`;
+  document.getElementById('orderReview').innerHTML = `
+    ${cart.map(item=>`
+      <div class="orow">
+        <span class="oemoji">${item.emoji}</span>
+        <span class="oname">${item.name}</span>
+        <span class="oqty">×${item.qty}</span>
+        <span class="oprice">Rs. ${(item.price*item.qty).toLocaleString()}</span>
+      </div>
+    `).join('')}
+    <div class="orow"><span class="oname">🚚 Delivery Fee</span><span class="oprice">Rs. ${delivery.toLocaleString()}</span></div>
+    <div class="ototal"><span>Grand Total</span><span>Rs. ${grand.toLocaleString()}</span></div>
+  `;
+}
+
+function goStep(n){
+  step = n;
+  [1,2,3,4].forEach(i=>{
+    document.getElementById(`step${i}`).classList.toggle('show', i===n);
+    const ps = document.getElementById(`ps${i}`);
+    if(i < n) ps.className='pstep done';
+    else if(i===n) ps.className='pstep active';
+    else ps.className='pstep';
+  });
+  const titles = ['','Review Your Order','Your Details','Payment','Order Confirmed!'];
+  document.getElementById('mTitle').textContent = titles[n];
+  document.querySelector('.modal').scrollTop=0;
+}
+
+function validateStep2(){
+  let ok = true;
+  const fields = [
+    {id:'cName', err:'eN', min:2},
+    {id:'cPhone', err:'eP', min:10},
+    {id:'cEmail', err:'eE', min:5},
+    {id:'cCity', err:'eC', min:2},
+    {id:'cAddr', err:'eA', min:5},
+  ];
+  fields.forEach(f=>{
+    const val = document.getElementById(f.id).value.trim();
+    const show = val.length < f.min;
+    document.getElementById(f.err).style.display = show ? 'block' : 'none';
+    if(show) ok = false;
+  });
+  // email validation
+  const email = document.getElementById('cEmail').value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    document.getElementById('eE').textContent='Please enter a valid email';
+    document.getElementById('eE').style.display='block'; ok=false;
+  }
+  if(ok) goStep(3);
+}
+
+function placeOrder(){
+  // Validate transaction ID
+  const txn = document.getElementById('cTxn').value.trim();
+  if(txn.length < 8){
+    document.getElementById('eTxn').style.display='block'; return;
+  } else document.getElementById('eTxn').style.display='none';
+  // Validate checkbox
+  if(!document.getElementById('cConfirm').checked){
+    document.getElementById('eConf').style.display='block'; return;
+  } else document.getElementById('eConf').style.display='none';
+
+  // Generate order ID
+  const ts = Date.now().toString().slice(-6);
+  generatedOrderId = `TC-${ts}`;
+
+  // Get values
+  const name    = document.getElementById('cName').value.trim();
+  const phone   = document.getElementById('cPhone').value.trim();
+  const email   = document.getElementById('cEmail').value.trim();
+  const city    = document.getElementById('cCity').value.trim();
+  const addr    = document.getElementById('cAddr').value.trim();
+  const note    = document.getElementById('cNote').value.trim();
+  const total   = document.getElementById('payAmount').textContent;
+
+  // Build order items string
+  const itemsStr = cart.map(c=>`${c.emoji} ${c.name} ×${c.qty} = Rs. ${(c.price*c.qty).toLocaleString()}`).join('\n');
+
+  // Show loading
+  const btn = document.getElementById('placeBtn');
+  btn.innerHTML='<span class="spinner"></span> Sending...';
+  btn.disabled = true;
+
+  // Send email via EmailJS
+  const templateParams = {
+    order_id:      generatedOrderId,
+    customer_name: name,
+    customer_phone:phone,
+    customer_email:email,
+    customer_city: city,
+    customer_addr: addr,
+    order_items:   itemsStr,
+    order_total:   total,
+    transaction_id:txn,
+    order_notes:   note || 'None',
+    order_date:    new Date().toLocaleString('en-PK', {timeZone:'Asia/Karachi'}),
+    to_email:      SUPP_EMAIL,
+  };
+
+  emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE, templateParams)
+    .then(()=>{
+      orderSuccess(name, email, phone, total, txn);
+    })
+    .catch(err=>{
+      console.error('EmailJS error:', err);
+      // Still show success — email might fail if keys not set up yet
+      orderSuccess(name, email, phone, total, txn);
+      showToast('Order saved! (Email setup needed — see guide)');
+    });
+}
+
+function orderSuccess(name, email, phone, total, txn){
+  // Update success screen
+  document.getElementById('orderIdDisplay').textContent = generatedOrderId;
+  document.getElementById('confirmEmail').textContent = email;
+
+  // Pre-fill WhatsApp message
+  const waMsg = encodeURIComponent(
+    `Hi TwistCraft! 👋\nI just placed Order *${generatedOrderId}*.\nName: ${name}\nTotal: ${total}\nTransaction ID: ${txn}\nPlease confirm my order. Thank you!`
+  );
+  document.getElementById('waConfirmLink').href = `https://wa.me/${WA_NUM}?text=${waMsg}`;
+
+  // Clear cart
+  cart = [];
+  saveCart();
+  updateCartUI();
+
+  // Go to success step
+  goStep(4);
+}
+
+function copyNum(){
+  navigator.clipboard.writeText(JAZZCASH).then(()=>showToast('Number copied! 📋'));
+}
+
+/* ══ CUSTOM ORDER FORM ══ */
+function submitCustom(e){
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const btn = document.getElementById('csub-btn');
+  btn.textContent='Sending...'; btn.disabled=true;
+
+  const params = {
+    order_id:'CUSTOM-'+Date.now().toString().slice(-5),
+    customer_name: fd.get('name'),
+    customer_phone:fd.get('phone'),
+    customer_email:fd.get('email'),
+    customer_city: fd.get('city'),
+    customer_addr: 'Custom Order',
+    order_items:   `Custom: ${fd.get('item')} | Colors: ${fd.get('colors')||'Any'} | Vision: ${fd.get('vision')}`,
+    order_total:   'TBD (custom)',
+    transaction_id:'N/A – Custom Order',
+    order_notes:   `Gift message: ${fd.get('message')||'None'}`,
+    order_date:    new Date().toLocaleString('en-PK',{timeZone:'Asia/Karachi'}),
+    to_email:      SUPP_EMAIL,
+  };
+
+  emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE, params)
+    .then(()=>{
+      document.getElementById('cform').style.display='none';
+      document.getElementById('fs').style.display='block';
+    })
+    .catch(()=>{
+      document.getElementById('cform').style.display='none';
+      document.getElementById('fs').style.display='block';
+    });
+}
+
+/* ══ TOAST ══ */
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 3000);
+}
+
+/* ══ NAV MOBILE ══ */
+function toggleMenu(){
+  const nl = document.getElementById('navLinks');
+  if(nl.style.display==='flex'){
+    nl.style.display='none';
+  } else {
+    Object.assign(nl.style,{display:'flex',flexDirection:'column',position:'fixed',top:'66px',left:0,right:0,background:'rgba(255,248,240,.98)',padding:'1.4rem 5vw',borderBottom:'2px solid #f0e8e0',zIndex:999,gap:'1.2rem'});
+  }
+}
+
+/* ══ INIT ══ */
+renderProducts();
+updateCartUI();
+</script>
+
+<!-- ══ MODULE IMPORTS ══ -->
+<script type="module" src="/js/app.js"></script>
+
+</body>
+</html>

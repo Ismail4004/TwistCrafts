@@ -1,0 +1,25 @@
+{
+  "name": "twistcraft",
+  "version": "1.0.0",
+  "description": "TwistCraft - Handmade Pipe Cleaner Gifts E-commerce Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "keywords": [
+    "ecommerce",
+    "handmade",
+    "gifts",
+    "pakistan"
+  ],
+  "author": "TwistCraft",
+  "license": "MIT"
+}
