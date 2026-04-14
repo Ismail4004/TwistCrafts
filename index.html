@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLRHTBWG5G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NLRHTBWG5G');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRHKE3N3Z2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KRHKE3N3Z2');
+  </script>
   
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -136,21 +135,6 @@ section{padding:4.5rem 5vw}
 .snum{width:50px;height:50px;border-radius:50%;background:var(--pink);color:#fff;font-weight:900;font-size:1.2rem;display:flex;align-items:center;justify-content:center;margin:0 auto .9rem}
 .step h3{font-weight:800;font-size:1rem;margin-bottom:.4rem}
 .step p{color:#aaa;font-size:.85rem;line-height:1.6}
-
-/* ── REVIEWS ── */
-#reviews{background:#fff}
-.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.4rem;max-width:980px;margin:0 auto}
-.rcard{background:var(--cream);border-radius:var(--r);padding:1.5rem;transition:transform .2s}
-.rcard:nth-child(1){border-left:5px solid var(--pink)}
-.rcard:nth-child(2){border-left:5px solid var(--green)}
-.rcard:nth-child(3){border-left:5px solid var(--yellow)}
-.rcard:hover{transform:translateY(-4px)}
-.rstars{color:var(--yellow);font-size:1rem;margin-bottom:.6rem}
-.rtext{font-size:.9rem;line-height:1.6;margin-bottom:.9rem;font-weight:600;font-style:italic}
-.rby{display:flex;align-items:center;gap:.65rem}
-.ravi{width:38px;height:38px;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;background:var(--cream)}
-.rname{font-weight:800;font-size:.87rem}
-.rloc{color:var(--muted);font-size:.75rem}
 
 /* ── CUSTOM ORDER ── */
 #custom{background:linear-gradient(135deg,#fff0f6,#fff8f0)}
@@ -312,7 +296,6 @@ footer{background:var(--dark);color:#fff;padding:3rem 5vw 1.8rem}
     <li><a href="#shop">Shop</a></li>
     <li><a href="#gifts">Gift Sets</a></li>
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#reviews">Reviews</a></li>
     <li><a href="#custom">Custom Order</a></li>
   </ul>
   <div class="nav-right">
@@ -360,10 +343,9 @@ footer{background:var(--dark);color:#fff;padding:3rem 5vw 1.8rem}
   <p class="sec-sub">Every piece is handcrafted — no two are exactly alike 💕</p>
   <div class="filters">
     <button class="fb active" onclick="filterProds('all',this)">All ✨</button>
-    <button class="fb" onclick="filterProds('flowers',this)">Flowers 🌸</button>
     <button class="fb" onclick="filterProds('keychains',this)">Keychains 🗝️</button>
-    <button class="fb" onclick="filterProds('figures',this)">Figures 🐾</button>
-    <button class="fb" onclick="filterProds('sets',this)">Gift Sets 🎁</button>
+    <button class="fb" onclick="filterProds('flowers',this)">Flowers 🌸</button>
+    <button class="fb" onclick="filterProds('decor',this)">Magnetic Decor 🧲</button>
   </div>
   <div class="pgrid" id="pgrid"></div>
 </section>
@@ -406,29 +388,6 @@ footer{background:var(--dark);color:#fff;padding:3rem 5vw 1.8rem}
     <div class="step"><div class="snum">3</div><h3>Pay via JazzCash</h3><p>Send the total to 032896729393 and enter your transaction ID to confirm.</p></div>
     <div class="step"><div class="snum">4</div><h3>We Handcraft It</h3><p>Your item is made fresh with love — each twist placed just for you.</p></div>
     <div class="step"><div class="snum">5</div><h3>Gift Wrapped & Shipped</h3><p>Packed beautifully with tissue, ribbon & a message card. Arrives at your door ✨</p></div>
-  </div>
-</section>
-
-<!-- ══ REVIEWS ══ -->
-<section id="reviews">
-  <h2 class="sec-title">What People Say 💬</h2>
-  <p class="sec-sub">Real reviews from real happy customers</p>
-  <div class="rgrid">
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <p class="rtext">"I got a custom bouquet for my girlfriend's birthday and she literally cried! So detailed and beautiful. Will order again!"</p>
-      <div class="rby"><div class="ravi">😊</div><div><div class="rname">Amir S.</div><div class="rloc">Lahore, Pakistan</div></div></div>
-    </div>
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <p class="rtext">"Got matching keychains with my bestie and we LOVE them. So unique — nobody else has something like this!"</p>
-      <div class="rby"><div class="ravi">🥰</div><div><div class="rname">Zara K.</div><div class="rloc">Karachi, Pakistan</div></div></div>
-    </div>
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <p class="rtext">"Ordered a cactus figure for my mom and she put it on her desk at work. The packaging was so cute — felt like a big brand gift!"</p>
-      <div class="rby"><div class="ravi">😍</div><div><div class="rname">Sara M.</div><div class="rloc">Islamabad, Pakistan</div></div></div>
-    </div>
   </div>
 </section>
 
@@ -483,7 +442,7 @@ footer{background:var(--dark);color:#fff;padding:3rem 5vw 1.8rem}
       </div>
     </div>
     <div class="fc"><h4>Shop</h4><ul><li><a href="#shop">All Products</a></li><li><a href="#gifts">Gift Sets</a></li><li><a href="#custom">Custom Orders</a></li><li><a href="#shop">New Arrivals</a></li></ul></div>
-    <div class="fc"><h4>Info</h4><ul><li><a href="#how">How It Works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#" onclick="showToast('Shipping: 3-5 days nationwide 🚚')">Shipping Policy</a></li><li><a href="#" onclick="showToast('Returns accepted within 3 days of delivery')">Return Policy</a></li></ul></div>
+    <div class="fc"><h4>Info</h4><ul><li><a href="#how">How It Works</a></li><li><a href="#" onclick="showToast('Shipping: 3-5 days nationwide 🚚')">Shipping Policy</a></li><li><a href="#" onclick="showToast('Returns accepted within 3 days of delivery')">Return Policy</a></li></ul></div>
     <div class="fc"><h4>Contact</h4><ul>
       <li><a href="mailto:muhammadismail300212@gmail.com">muhammadismail300212<br>@gmail.com</a></li>
       <li><a href="https://wa.me/923289679393" target="_blank">WhatsApp: 032896729393</a></li>
@@ -616,43 +575,15 @@ const SUPP_EMAIL= 'muhammadismail300212@gmail.com';
 
 /* ══ PRODUCTS ══ */
 const PRODUCTS = [
-  {id:1, name:'Rose Bouquet',      emoji:'🌹', bg:'#fff0f0', border:'#ffb3b3',
-   desc:'A stunning bouquet of pipe cleaner roses — perfect for Valentine\'s or anniversaries.',
-   price:850, cat:'flowers', badge:'hot',
-   img:'https://i.pinimg.com/736x/ae/3e/f9/ae3ef9c4e6ffa7e2b2b7a5d6a4c9c123.jpg'},
-  {id:2, name:'Sunflower Bunch',   emoji:'🌻', bg:'#fffbe8', border:'#ffd166',
-   desc:'Bright & cheerful sunflowers that never wilt. Great desk decor or gift.',
-   price:750, cat:'flowers', badge:'new', img:''},
-  {id:3, name:'Cherry Blossom',    emoji:'🌸', bg:'#fff0f6', border:'#ffaad4',
-   desc:'Delicate pink blossoms on wire stems — a timeless, elegant handmade gift.',
-   price:700, cat:'flowers', badge:null, img:''},
-  {id:4, name:'Daisy Wreath',      emoji:'🌼', bg:'#fffdf0', border:'#ffe066',
-   desc:'A mini wreath of white daisies. Hang it, frame it, or just admire it.',
-   price:900, cat:'flowers', badge:null, img:''},
-  {id:5, name:'Name Keychain',     emoji:'🗝️', bg:'#f0fff8', border:'#06d6a0',
-   desc:'Personalised with your name or initials — great BFF or couple gift.',
+  {id:1, name:'Custom Keychain',   emoji:'🗝️', bg:'#f0fff8', border:'#06d6a0',
+   desc:'Personalised pipe cleaner keychain with your name or initials — perfect gift for friends and loved ones.',
    price:400, cat:'keychains', badge:'hot', img:''},
-  {id:6, name:'Heart Keychain',    emoji:'❤️', bg:'#fff0f6', border:'#ff9dc3',
-   desc:'A classic heart in your choice of colour. Simple, sweet, forever.',
-   price:350, cat:'keychains', badge:null, img:''},
-  {id:7, name:'Star Keychain',     emoji:'⭐', bg:'#fffbe0', border:'#ffd166',
-   desc:'A sparkly star keychain — for the star of your life.',
-   price:380, cat:'keychains', badge:'new', img:''},
-  {id:8, name:'Paw Keychain',      emoji:'🐾', bg:'#f5f0ff', border:'#c77dff',
-   desc:'A cute paw print keychain, great for animal lovers and pet parents!',
-   price:400, cat:'keychains', badge:null, img:''},
-  {id:9, name:'Teddy Bear',        emoji:'🐻', bg:'#fff5e0', border:'#ffad60',
-   desc:'An adorable hand-twisted teddy bear. A gift that goes "aww".',
-   price:600, cat:'figures', badge:'hot', img:''},
-  {id:10,name:'Butterfly Figure',  emoji:'🦋', bg:'#f0f0ff', border:'#9999ff',
-   desc:'A delicate butterfly with spread wings — perfect for any shelf or desk.',
-   price:600, cat:'figures', badge:null, img:''},
-  {id:11,name:'Cactus Planter',    emoji:'🌵', bg:'#f0fff5', border:'#06d6a0',
-   desc:'A tiny cactus that needs zero water. Cute, quirky & zero maintenance.',
-   price:500, cat:'figures', badge:null, img:''},
-  {id:12,name:'Couple Gift Set',   emoji:'🎁', bg:'#fff0f6', border:'#ff6b9d',
-   desc:'2 matching keychains + 1 mini rose bouquet — the ultimate couple gift box.',
-   price:1400, cat:'sets', badge:'hot', img:''},
+  {id:2, name:'Flower Bouquet',    emoji:'�', bg:'#fff0f6', border:'#ffaad4',
+   desc:'Beautiful handmade pipe cleaner flowers that never wilt — perfect for any occasion.',
+   price:800, cat:'flowers', badge:'new', img:''},
+  {id:3, name:'Magnetic Decor',    emoji:'🧲', bg:'#f5f0ff', border:'#c77dff',
+   desc:'Cute pipe cleaner figures with magnets — perfect for your fridge or any metal surface.',
+   price:500, cat:'decor', badge:null, img:''},
 ];
 
 /* ══ STATE ══ */
