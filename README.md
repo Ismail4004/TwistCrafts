@@ -120,10 +120,6 @@ TwistCraft-main/
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## License
-
-MIT License - Feel free to use and modify for your needs.
-
 ## Support
 
 For issues or questions, contact via WhatsApp (03289672939) or email (muhammadismail300212@gmail.com).
